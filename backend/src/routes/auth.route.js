@@ -2,9 +2,7 @@ import express from "express";
 
 const router = express.Router();
 
-router.post("/signup", (req,res) => {
-  res.send("signup route")
-});
+router.post("/signup");
 
 router.post("/login", (req,res) => {
   res.send("login route")

@@ -36,6 +36,7 @@ const ProfilePage = () => {
 
         setSelectedImg(base64Image);
         await updateProfile({ profilePic: base64Image });
+      // eslint-disable-next-line no-unused-vars
       } catch (error) {
         setError("Failed to upload image. Please try again.");
       }
@@ -60,6 +61,9 @@ const ProfilePage = () => {
     });
   };
 
+  // Default profile image if no user image is added
+  const profileImg = selectedImg || authUser?.profilePic || "/avatar.png"; // Fallback image
+
   return (
     <div className="h-screen pt-20">
       <div className="max-w-2xl mx-auto p-4 py-8">
@@ -73,7 +77,7 @@ const ProfilePage = () => {
           <div className="flex flex-col items-center gap-4">
             <div className="relative">
               <img
-                src={selectedImg || authUser.profilePic || "/avatar.png"}
+                src={profileImg}
                 alt="Profile"
                 className="size-32 rounded-full object-cover border-4"
               />

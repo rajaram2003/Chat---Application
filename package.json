@@ -1,0 +1,21 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "start":"",
+    "url": "git+https://github.com/rajaram2003/Chat---Application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajaram2003/Chat---Application/issues"
+  },
+  "homepage": "https://github.com/rajaram2003/Chat---Application#readme",
+  "description": ""
+}
